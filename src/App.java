@@ -24,12 +24,10 @@ public class App {
 
         metBur.ordenar(personas);
 
-        for (int i = 0; i < tamanio; i++) {
-            System.out.println(personas[i]);
-        }
+       
 
         MetodoBusqueda mB= new MetodoBusqueda(personas,edadBuscada);
-        mB.encontrarPorEdad();
+
 
         mB.showPersonByCode();
 

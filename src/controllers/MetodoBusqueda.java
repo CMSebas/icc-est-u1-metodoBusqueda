@@ -60,11 +60,11 @@ public class MetodoBusqueda {
     public void showPersonByCode(){
 
         int indexPerson=encontrarPorEdad();
+        String nombre = people[indexPerson].getName();
         if(indexPerson==-1){
             console.showMessage("No hay la persona en este codigo");
         }else{
-            console.showMessage("Persona con codigo"+edadBusca+"encontrada");
-            console.showMessage(people[indexPerson].toString());
+            console.showMessage("La persona con la edad " + edadBusca + " es " + nombre);
         }
     }
 
